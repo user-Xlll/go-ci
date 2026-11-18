@@ -1,0 +1,13 @@
+name: goci
+purpose: A command-line toolkit for common CI tasks in Go and Node.js projects.
+scope: >-
+  Runs tests across Go modules, generates test and coverage reports, discovers
+  buildable services and project modules, cross-compiles Go packages, analyzes
+  Helm charts, and supports common CI workflows.
+tags:
+  - go
+  - nodejs
+  - ci
+  - docker
+  - testing
+  - build

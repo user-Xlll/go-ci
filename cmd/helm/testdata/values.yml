@@ -1,0 +1,11 @@
+a:
+  array:
+    - key: "1"
+      value: 100
+    - key: 2
+      value: 200
+  map:
+    key1:
+      x: 100
+      y: 200
+    key2: 999

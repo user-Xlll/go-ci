@@ -1,0 +1,39 @@
+{
+  "name": "@example-org/vite-plugin-platform",
+  "version": "4.2.0",
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:lib": "tsup",
+    "lint:check": "tsc -b && eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "http-proxy-middleware": "^3.0.5",
+    "node-html-parser": "^7.0.1"
+  },
+  "devDependencies": {
+    "@example-org/eslint": "^1.0.0",
+    "@example-org/specification": "^4.2.0",
+    "@example-org/typescript": "^1.0.0"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.0 || ^6.0.0 || ^7.0.0"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.example.com/repository/npm/"
+  }
+}

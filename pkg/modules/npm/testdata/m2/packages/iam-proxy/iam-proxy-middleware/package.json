@@ -1,0 +1,31 @@
+{
+  "name": "@example-org/iam-proxy-middleware",
+  "version": "4.0.0",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:lib": "tsup",
+    "lint:check": "tsc -b && eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "cookie": "^1.0.2",
+    "nanoid": "^5.1.5",
+    "node-fetch": "^3.3.2",
+    "query-string": "^9.1.1"
+  },
+  "devDependencies": {
+    "@example-org/eslint": "^1.0.0",
+    "@example-org/typescript": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.example.com/repository/npm/"
+  }
+}
